@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Our Web Description" />
+    <meta name="keywords" content="HTML,CSS, Form, FLex" />
+    <meta name="author" content="kristina" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 12</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section>
+      <!-- form Html -->
+      <form method="post" class="form" action="">
+        <div class="form-wraper">
+          <label for="fname">First Name</label>
+          <input
+            class="input-style"
+            type="text"
+            id="fname"
+            name="firstusername"
+            placeholder="Enter Your Name.."
+          />
+        </div>
+
+        <div class="form-wraper">
+          <label for="passw">Password</label>
+          <input
+            class="input-style"
+            type="password"
+            id="passw"
+            name="passworduser"
+            placeholder="Enter Your Password"
+            required
+          />
+        </div>
+
+        <div class="form-wraper">
+          <label for="country">Country</label>
+          <select class="select" name="usercountry" id="country">
+            <option value="none" selected disabled hidden>
+              Choose Your Country
+            </option>
+            <option value="Germany">Germany</option>
+            <option value="georgia">Georgia</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+        <div class="form-wraper">
+          <label for="review">Your Review</label>
+          <textarea
+            name="message"
+            id="review"
+            class="textarea"
+            placeholder="Enter Your Review"
+          ></textarea>
+        </div>
+        <button class="btn-send" type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

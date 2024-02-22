@@ -1,0 +1,46 @@
+.form-wraper {
+    display: flex;
+    flex-direction: column;
+}
+.input-style {
+    width: 100%;
+    height: 65px;
+    margin: 15px 0;
+    color: blue;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid red;
+    /* border-radius: 25px; */
+}
+.input-style[type="password"] {
+    background-color: yellow;
+}
+.form {
+    max-width: 700px;
+    width: 100%;
+    margin-left: 150px;
+}
+.input-style::placeholder {
+    font-size: 14px;
+    color: green;
+}
+.input-style:focus,
+.select:focus,
+.textarea:focus{
+    outline: none;
+}
+.btn-send {
+    background-color: blueviolet;
+    border-radius: 20px;
+    width: 250px;
+    border: none;
+}
+.select {
+    width: 100%;
+    height: 45px;
+}
+.textarea {
+    width: 100%;
+    height: 250px;
+    resize: none;
+}
